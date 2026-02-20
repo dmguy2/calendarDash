@@ -387,13 +387,17 @@
         }
 
         .event-item {
-            font-size: 0.44vw;
-            line-height: 1.3;
-            padding: 1px 0 1px 0.24vw;
+            font-size: 0.40vw;
+            line-height: 1.25;
+            padding: 1px 0 1px 0.22vw;
             border-left: 2px solid var(--evt-color, var(--ev1));
-            white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            white-space: normal;
+            word-break: break-word;
             color: var(--text-sec);
             margin-top: 1px;
             flex-shrink: 0;
